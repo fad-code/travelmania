@@ -1,0 +1,284 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+a {
+  text-decoration: none;
+}
+.link-wrapper {
+  display: block; 
+  text-decoration: none; 
+  color: inherit; 
+  margin-bottom: 1.5em; 
+}
+
+.link-wrapper:visited {
+  color: inherit;
+}
+
+header {
+  background: #F55A5A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5em;
+  margin-bottom: 1em;
+}
+
+header > img {
+  width: 1.5em;
+  margin-right: 0.5em;
+}
+
+header > h1 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto 2em;
+  padding: 0 1em;
+}
+
+article.journal-entry {
+  display: flex;
+  gap: 1em;
+  background: #fff;
+  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5em;
+}
+
+article.journal-entry:last-child {
+  margin-bottom: 0;
+}
+
+.main-image-container {
+  flex-shrink: 0;
+  width: 6.5em;
+  height: 6.5em;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info-container {
+  position: relative;
+  flex: 1;
+}
+
+.info-container .marker,
+.info-container span.country {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.info-container .marker {
+  width: 1em;
+  margin-right: 0.5em;
+}
+
+.info-container span.country {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: #F55A5A;
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+
+.info-container a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.info-container a:hover {
+  text-decoration: underline;
+}
+
+.entry-title {
+  margin: 0.6em 0 0.2em;
+  font-size: 1.2em;
+  line-height: 1.3;
+}
+
+.trip-dates {
+  font-size: 0.9em;
+  font-weight: bold;
+  margin: 0 0 0.6em;
+  color: #444;
+}
+
+.entry-text {
+  margin: 0;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+/* city details*/
+.city-details {
+  font-family: Inter, sans-serif;
+  color: #333;
+  background: #fafafa;
+}
+
+/* Banner Section */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.banner-text {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.banner-text h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.banner-text p {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Content Wrapper */
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+/* Sections */
+.cards-section {
+  margin-bottom: 2rem;
+}
+
+.cards-section h2 {
+  color: #f55a5a;
+  margin-bottom: 1rem;
+}
+
+/* Cards Grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.2rem;
+}
+
+.cards-grid .card img {
+  width: 100%;
+  max-height: 150px;        /* or whatever max height you like */
+  object-fit: contain;
+  background: #f0f0f0;      /* placeholder behind letterbox bars */
+  display: block;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 0.6rem;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Travel Tips List */
+.tips-list {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  list-style-type: disc;
+  padding-left: 2rem;
+}
+
+/* Meta Info */
+.meta {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Google Maps Button */
+.maps-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  background: #f55a5a;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.maps-btn:hover {
+  background: #d64a4a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner {
+    height: 220px;
+  }
+
+  .banner-text h1 {
+    font-size: 2rem;
+  }
+
+  .banner-text p {
+    font-size: 1.1rem;
+  }
+}
